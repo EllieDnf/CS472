@@ -1,0 +1,22 @@
+1.	(setTimeout(booyah, 2000)) -----> will call the "booyah" function after 2 seconds. As, we are passing function name only.
+
+	(setTimeout(booyah(), 2000))----> will call the "booyah" function immediately, rather than waiting 2 seconds. 
+						    As, we are calling the function using '()'.
+
+2.	Both alert functions will display "6".
+	First alert, we are passing the x var refrence and x is calling a function.
+	Second alert, we are calling y var and y is refrence of a function or in other words y is a function.
+
+
+3.	function booyah1(){
+		alert("BOOYAH!");
+	}
+	function booyah2(){
+		return ()=>alert("BOOYAH!");
+	}
+
+4.	Unobtrusive Javascript is a way to write the javascript code. According to the principles of unobtrusive javascript, JavaScript code should be separate from HTML.
+	Below are the key features behind writing the javascript code in an unobtrusive way:
+	1. It's separate the code in 3 major categories HTML (UI/Content) , CSS (styling/Presentation) , JavaScript (logic/Behavior).
+	2. Fast loading, as some of the old browsers don't support JS then at least HTML and CSS will load.
+	3. Robustness, It's easy to maintain. Multiple developers can update, debug the respective pages separately.
