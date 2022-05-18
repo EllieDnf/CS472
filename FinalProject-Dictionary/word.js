@@ -7,7 +7,7 @@ let lookup = function (w) {
     const db = mysql.createConnection({
         host: 'localhost',
         user: 'root',
-        password: 'El12279412',
+        password: 'root',
         database: 'entries'
     });
 
